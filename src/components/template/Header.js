@@ -34,7 +34,12 @@ const RightButtons = (
 );
 
 const Header = () => (
-  <AppBar title="Material Playground" iconElementRight={RightButtons} />
+  <AppBar
+    title="Material Playground"
+    iconElementRight={RightButtons}
+    fullWidth={true}
+    style={{width: 'auto', margin: -8}}
+  />
 );
 
 export default Header;

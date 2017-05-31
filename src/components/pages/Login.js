@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import MuiThemeProvider from "material-ui/styles/MuiThemeProvider";
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import Header from '../template/Header';
+import LoginCard from '../cards/LoginCard';
 
 export default class Login extends Component {
   render() {
@@ -9,6 +10,7 @@ export default class Login extends Component {
         <MuiThemeProvider>
           <Header />
         </MuiThemeProvider>
+        <LoginCard />
         <p>This is Login page</p>
       </div>
     );

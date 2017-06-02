@@ -5,11 +5,12 @@ import { Link } from 'react-router-dom';
 
 const NavButtons = ['Home', 'Contact', 'Login', 'Signup'].map(name => (
   <FlatButton
-    containerElement={<Link to={`${name}`} />}
+    containerElement={<Link to={`${name}`.toLowerCase()} />}
     label={`${name}`}
     style={{
       backgroundColor: 'transparent',
       color: 'white',
+      margin: 5,
     }}
   />
 ));
@@ -23,3 +24,5 @@ const Header = () => (
 );
 
 export default Header;
+
+// containerElement={<Link to={`${name}`} />}

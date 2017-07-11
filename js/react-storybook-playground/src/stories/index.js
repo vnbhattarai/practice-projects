@@ -13,13 +13,15 @@ import Welcome from './Welcome';
 import Input from './material/Input';
 import Signin from './material/Signin';
 import MaterialButton from './material/Button';
+import Test from './Test';
 
 
 storiesOf('Welcome', module).add('to Storybook', () => <Welcome showApp={linkTo('Button')} />);
 
-storiesOf('Button', module)
+storiesOf('Test', module)
   .add('with text', () => <Button onClick={action('clicked')}>Hello Button</Button>)
-  .add('with some emoji', () => <Button onClick={action('clicked')}>😀 😎 👍 💯</Button>);
+  .add('with some emoji', () => <Button onClick={action('clicked')}>😀 😎 👍 💯</Button>)
+  .add('Loading Test', () => <Test />)
 
 storiesOf('Material-UI Component', module)
   .add('RaisedButton', () => <MaterialButton />)

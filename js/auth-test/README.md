@@ -1,0 +1,1 @@
+# Auth test using Feathersjs local instance as auth API
